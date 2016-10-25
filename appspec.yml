@@ -4,4 +4,6 @@ files:
   - source: index.html
     destination: /home/bitnami/htdocs
 hooks:
-
+  BeforeInstall:
+    - location: scripts/deleteindex.sh
+      timeout: 180
