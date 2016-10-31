@@ -1,2 +1,2 @@
-cd /home/bitnami/htdocs
-sudo rm index.html
+cd /home/bitnami/stack/apache2/conf
+sudo rm httpd.conf
