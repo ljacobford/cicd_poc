@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: httpd.conf
+  - source: files/httpd.conf
     destination: /home/bitnami/stack/apache2/conf
   - source: scripts/index.sh
     destination: /home/bitnami/stack/apache2/cgi-bin
