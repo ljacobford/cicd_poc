@@ -2,7 +2,7 @@
 echo "Content-type: text/html"
 echo ""
 echo "<html><head><title>My CICD POC"
-echo "</title></head><body bgcolor='FFFF00'>"
+echo "</title></head><body bgcolor='808080'>"
 
 echo "<h1>This is my CI/CD Example</h1>"
 echo "<h2>Instance ID: $( curl http://169.254.169.254/latest/meta-data/instance-id )</h2>"
