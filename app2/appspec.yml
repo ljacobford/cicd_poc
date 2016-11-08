@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: files/httpd.conf
+    destination: /home/bitnami/stack/apache2/conf
+  - source: scripts/index.sh
+    destination: /home/bitnami/stack/apache2/cgi-bin
+hooks:
+  BeforeInstall:
+    - location: scripts/deleteindex.sh
+      timeout: 180
+  AfterInstall:
+    - location: scripts/restartapache.sh
+      timeout: 180
